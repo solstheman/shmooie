@@ -9,7 +9,12 @@ body {
 	margin: auto;
 	text-align: center;
 }
+.main_content div {
+	margin-top: 10px;
+}
+.main_content div+div {
+	margin-top: 20px;
+}
 .dog_image {
 	width: 500px;
-	margin-left: 200px;
 }
