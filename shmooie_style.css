@@ -4,9 +4,11 @@ body {
 	margin-top: 50px;
 	background: grey;
 }
-body div {
+body div div {
 	margin-top: 10px;
 }
 .main_content {
-	background: #fff;	
+	background: #fff;
+	height: auto;
+	width: 700px;
 }
