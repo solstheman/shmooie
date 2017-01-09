@@ -1,16 +1,11 @@
 body {
-	width: 900px;
 	margin: auto;
-	margin-top: 50px;
 	background: grey;
-}
-body div div {
-	margin-top: 10px;
 }
 .main_content {
 	background: #fff;
 	height: auto;
-	width: 700px;
+	width: 900px;
 	margin: auto;
 }
 .dog_image {
