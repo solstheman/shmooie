@@ -3,8 +3,8 @@ body {
 	background: grey;
 }
 .main_content {
-	background: #fff;
-	height: auto;
+	background: lightgrey;
+	height: inherit;
 	width: 900px;
 	margin: auto;
 }
