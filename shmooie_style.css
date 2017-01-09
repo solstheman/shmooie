@@ -1,11 +1,8 @@
-html {
-	background: grey;
-}
-
 body {
 	width: 900px;
 	margin: auto;
 	margin-top: 50px;
+	background: grey;
 }
 body div {
 	margin-top: 10px;
