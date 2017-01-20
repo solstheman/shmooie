@@ -22,4 +22,6 @@ body {
 }
 .shmooie_card {
 	box-shadow: 0 0 16px rgba(0, 0, 0, .2);
+	width: 600px;
+	background: white;
 }
