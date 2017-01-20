@@ -18,10 +18,12 @@ body {
 }
 .dog_image {
 	width: 500px;
-	margin-top: 10px;
 }
 .shmooie_card {
 	box-shadow: 0 0 16px rgba(0, 0, 0, .2);
-	width: 600px;
+	width: 100%;
 	background: white;
+}
+.image_span {
+	display: inline-block;
 }
