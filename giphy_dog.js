@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	request = new XMLHttpRequest;
-	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=goofy+puppy', true);
+	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cute+puppy', true);
 	
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400){
