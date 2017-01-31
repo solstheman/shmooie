@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-	setInterval(newGif, 5000);
+	newGif();
+	setInterval(newGif(), 5000);
 });
 
 function newGif () {
