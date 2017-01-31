@@ -8,7 +8,6 @@ function newGif () {
 	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cute+puppy', true);
 	
 	request.onload = function() {
-		setInterval()
 		if (request.status >= 200 && request.status < 400){
 			data = JSON.parse(request.responseText).data.image_url;
 			console.log(data);
