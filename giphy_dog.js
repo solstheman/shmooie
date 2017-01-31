@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 	newGif();
-	setInterval(newGif(), 5000);
 });
 
 function newGif () {
@@ -23,4 +22,6 @@ function newGif () {
 	};
 
 	request.send();
+
+	setTimeout(newGif, 5000);
 };
