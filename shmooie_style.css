@@ -33,9 +33,23 @@ body {
 	display: inline-block;
 }
 .goofiness_button {
-	height: 50px;
+	height: 40px;
 	width: 100px;
 	background-color: #4285f4;
 	color: white;
 	text-align: middle;
+	text-decoration: none;
+	transition: background-color 0.1s text-decoration 0.1s;
+}
+.goofiness_button:hover {
+	background-color: blue;
+	text-decoration: strong;
+}
+.goofiness_button a {
+	padding-top: 10px;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
 }
