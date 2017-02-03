@@ -1,7 +1,5 @@
-$button_hover_color: #4F4FFF; //fix this
-
 body {
-	margin: auto;
+	margin: 0px;
 	background: #eee;
 }
 .header {
@@ -44,11 +42,7 @@ body {
 	background-color: #4285f4;
 	text-align: middle;
 	display: inline-block;
-	transition: background-color 0.1s text-decoration 0.1s;
-}
-.goofiness_button:hover {
-	background-color: #4F4FFF;
-	text-decoration: strong;
+	transition: background-color 0.1s;
 }
 .goofiness_button a {
 	padding-top: 10px;
@@ -57,4 +51,7 @@ body {
 	display: inline-block;
 	height: 100%;
 	width: 100%;
+}
+.goofiness_button:hover {
+	background-color: #4F4FFF;
 }
