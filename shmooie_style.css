@@ -32,3 +32,10 @@ body {
 .image_span {
 	display: inline-block;
 }
+.goofiness_button {
+	height: 50px;
+	width: 100px;
+	background-color: #4285f4;
+	color: white;
+	text-align: middle;
+}
