@@ -23,15 +23,23 @@ body {
 	width: 80%;
 	display: inline-block;
 }
+.fun_title h1 {
+	margin: 0;
+}
 .dog_image {
 	width: 500px;
 }
 .shmooie_card {
 	box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
 	width: 100%;
+	min-height: 200px;
 	background: white;
-	margin-top: 10px;
+	margin-bottom: 50px;
 	padding: 20px 0;
+}
+.shmooie_card object {
+	width: 100%;
+	height: 500px;
 }
 .image_span {
 	display: inline-block;
