@@ -50,7 +50,7 @@ body {
 	background-color: #4285f4;
 	text-align: middle;
 	display: inline-block;
-	transition: background-color 0.1s;
+	transition: background-color 0.5s ease-out;
 }
 .goofiness_button a {
 	padding-top: 10px;
