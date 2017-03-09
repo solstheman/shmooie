@@ -63,4 +63,5 @@ body {
 }
 .goofiness_button:hover {
 	background-color: #4F4FFF;
+	cursor: url(dog_head.png), auto;
 }
