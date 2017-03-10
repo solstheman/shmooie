@@ -10,7 +10,7 @@ function loadTitle() {
 		"My puppy just turned two, so we are celebrating his Bark-Mitzvah",
 		"Barking at strangers is more than just a passion, it's a way of life",
 		"Help, I am trapped in a witty dog title factory and I can't get out!",
-		"If you refresh this page enough, you can witness my slow dissent into madness",
+		"If you refresh this page enough, you can witness my slow descent into madness",
 		"Check out the craziness ---------------------------->"
 	];
 
