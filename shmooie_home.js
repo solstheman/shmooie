@@ -17,3 +17,11 @@ function loadTitle() {
 	var selected = Math.floor(titleArray.length * Math.random());
 	var element = document.getElementById("fun_title").innerHTML = '<h3>' + titleArray[selected] + '</h3>';
 };
+
+$(function() {
+  $('.menu_button').on('click', function (e) {
+	  e.preventDefault();
+	  $('.menu_panel').toggleClass('menu_open');
+	  $('.menu_button').toggleClass('menu_open');
+  });
+});
