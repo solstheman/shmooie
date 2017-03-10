@@ -60,7 +60,7 @@ body {
 	display: inline-block;
 	height: 100%;
 	width: 100%;
-	cursor: url(smallest_dog_head.png), auto;
+	cursor: url(smallest_dog_head.png) 25 15, auto;
 }
 .goofiness_button:hover {
 	background-color: #4F4FFF;
