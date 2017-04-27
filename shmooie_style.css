@@ -43,6 +43,9 @@ body {
 	width: 100%;
 	height: 500px;
 }
+.shmooie_card video {
+	width: 100%;
+}
 .image_span {
 	display: inline-block;
 }
