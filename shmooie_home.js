@@ -1,3 +1,7 @@
+define([
+	'Mustache'
+], function( Mustache ){
+
 document.addEventListener('DOMContentLoaded', function () {
 	loadTitle();
 });
@@ -35,3 +39,5 @@ var template = $("#dog_template").html();
 var html = Mustache.render(template, data);
 
 $("body").append(html);
+
+});
