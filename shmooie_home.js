@@ -1,7 +1,3 @@
-define([
-	'Mustache'
-], function( Mustache ){
-
 document.addEventListener('DOMContentLoaded', function () {
 	loadTitle();
 });
