@@ -25,15 +25,3 @@ $(function() {
 	  $('.menu_button').toggleClass('menu_open');
   });
 });
-
-var data = {
-	content: "This worked"
-};
-
-var template = $("#dog_template").html();
-
-var html = Mustache.render(template, data);
-
-$("body").append(html);
-
-});
