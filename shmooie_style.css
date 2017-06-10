@@ -71,7 +71,7 @@ body {
 
 }
 .menu_button {
-	visibility: hidden;
+	/*visibility: hidden;*/
 	width: 50px;
 	height: 40px;
 	position: fixed;
@@ -85,7 +85,7 @@ body {
 	transition: 0.3s all ease-in-out;
 }
 .menu_panel {
-	visibility: hidden;
+	/*visibility: hidden;*/
 	width: 300px;
 	height: 100%;
 	position: fixed;
@@ -109,9 +109,22 @@ body {
 	font-size: large;
 	font-weight: bold;
 }
+a {
+	text-decoration: none;
+	color: black;
+}
 .menu_title {
 	margin-top: 20px;
 	text-align: center;
 	font-size: xx-large;
 	font-weight: bolder;
+}
+.apology{
+	margin-top: 100px;
+}
+.apology_sign {
+	font-size: xx-large;
+}
+.apology_sign_punch_line {
+	font-size: xx-large;
 }
