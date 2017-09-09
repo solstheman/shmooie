@@ -40,8 +40,7 @@ $(function() {
   $('.dogs_page').on('click', function (e) {
 	  e.preventDefault();
 	  $('.main_content').load('dogs.html');
-	  $('body').scrollTop(0);
-	  make_an_excuse();
+	  $('body').scrollTop(0).make_an_excuse();
   });
 });
 
