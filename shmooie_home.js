@@ -25,3 +25,12 @@ $(function() {
 	  $('.menu_button').toggleClass('menu_open');
   });
 });
+
+//switch to about me
+$(function() {
+  $('.about_me').on('click', function (e) {
+	  e.preventDefault();
+	  const newHTML = '/about_me.html';
+	  $('.main_content').load(newHTML)
+  });
+});
