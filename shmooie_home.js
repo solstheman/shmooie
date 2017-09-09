@@ -30,8 +30,9 @@ $(function() {
 $(function() {
   $('.about_me').on('click', function (e) {
 	  e.preventDefault();
-	  $('.main_content').load('about_me.html');
-	  $('body').scrollTop(0);
+	  $('.main_content').load('about_me.html', function() {
+  	  	$('body').scrollTop(0);
+	  });
   });
 });
 
@@ -39,9 +40,10 @@ $(function() {
 $(function() {
   $('.dogs_page').on('click', function (e) {
 	  e.preventDefault();
-	  $('.main_content').load('dogs.html');
-	  $('body').scrollTop(0);
-	  make_an_excuse();
+	  $('.main_content').load('dogs.html', function() {
+  	  	$('body').scrollTop(0);
+  	  	make_an_excuse();
+	  });
   });
 });
 
@@ -49,8 +51,9 @@ $(function() {
 $(function() {
   $('.main_page').on('click', function (e) {
 	  e.preventDefault();
-	  $('.main_content').load('home_page.html');
-  	  $('body').scrollTop(0);
+	  $('.main_content').load('home_page.html', function() {
+  	  	$('body').scrollTop(0);
+	  });
   });
 });
 
