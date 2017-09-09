@@ -30,7 +30,6 @@ $(function() {
 $(function() {
   $('.about_me').on('click', function (e) {
 	  e.preventDefault();
-	  const newHTML = '/about_me.html';
-	  $('.main_content').load(newHTML)
+	  $('.main_content').load('about_me.html')
   });
 });
