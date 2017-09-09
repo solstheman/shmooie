@@ -33,3 +33,19 @@ $(function() {
 	  $('.main_content').load('about_me.html')
   });
 });
+
+//switch to dog page
+$(function() {
+  $('.dog_page').on('click', function (e) {
+	  e.preventDefault();
+	  $('.main_content').load('dogs.html')
+  });
+});
+
+//switch back to home
+$(function() {
+  $('.main_page').on('click', function (e) {
+	  e.preventDefault();
+	  $('.main_content').load('main_page.html')
+  });
+});
