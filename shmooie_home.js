@@ -73,5 +73,5 @@ function make_an_excuse() {
 	];
 
 	var selected = Math.floor(excuseArray.length * Math.random());
-	var element = document.getElementById("apology_sign_punch_line").innerHTML = excuseArray[selected];
+	var element = $("#apology_sign_punch_line").html(excuseArray[selected]);
 };
