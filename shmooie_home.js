@@ -36,7 +36,7 @@ $(function() {
 
 //switch to dog page
 $(function() {
-  $('.dog_page').on('click', function (e) {
+  $('.dogs_page').on('click', function (e) {
 	  e.preventDefault();
 	  $('.main_content').load('dogs.html')
   });
@@ -46,6 +46,6 @@ $(function() {
 $(function() {
   $('.main_page').on('click', function (e) {
 	  e.preventDefault();
-	  $('.main_content').load('main_page.html')
+	  $('.main_content').load('home_page.html')
   });
 });
