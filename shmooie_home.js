@@ -41,7 +41,7 @@ $(function() {
 	  e.preventDefault();
 	  $('.main_content').load('dogs.html');
 	  $('body').scrollTop(0);
-	  delay(100).make_an_excuse();
+	  make_an_excuse();
   });
 });
 
@@ -73,5 +73,5 @@ function make_an_excuse() {
 	];
 
 	var selected = Math.floor(excuseArray.length * Math.random());
-	var element = $("#apology_sign_punch_line").html(excuseArray[selected]);
+	$("#apology_sign_punch_line").html(excuseArray[selected]);
 };
