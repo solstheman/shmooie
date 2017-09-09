@@ -108,6 +108,7 @@ body {
 	height: 55px;
 	font-size: large;
 	font-weight: bold;
+	cursor: pointer;
 }
 a {
 	text-decoration: none;
