@@ -30,7 +30,8 @@ $(function() {
 $(function() {
   $('.about_me').on('click', function (e) {
 	  e.preventDefault();
-	  $('.main_content').load('about_me.html')
+	  $('.main_content').load('about_me.html');
+	  $('body').scrollTop(0);
   });
 });
 
@@ -38,7 +39,9 @@ $(function() {
 $(function() {
   $('.dogs_page').on('click', function (e) {
 	  e.preventDefault();
-	  $('.main_content').load('dogs.html')
+	  $('.main_content').load('dogs.html');
+	  $('body').scrollTop(0);
+	  make_an_excuse();
   });
 });
 
@@ -46,6 +49,29 @@ $(function() {
 $(function() {
   $('.main_page').on('click', function (e) {
 	  e.preventDefault();
-	  $('.main_content').load('home_page.html')
+	  $('.main_content').load('home_page.html');
+  	  $('body').scrollTop(0);
   });
 });
+
+function make_an_excuse() {
+	var excuseArray = [
+		'digging holes in the back yard',
+		'eating our vegetables',
+		'doing something important',
+		'building the future',
+		'watering my plants',
+		'propogating succulents',
+		'watching Call the Midwife',
+		'looking outside and dreaming of salvation',
+		'poopin\'',
+		'providing for my family',
+		'watching you through your window',
+		'digging around craigslist',
+		'rotating my tires',
+		'settling lawsuits'
+	];
+
+	var selected = Math.floor(excuseArray.length * Math.random());
+	var element = document.getElementById("apology_sign_punch_line").innerHTML = excuseArray[selected];
+};
