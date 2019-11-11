@@ -1,3 +1,7 @@
+var $window   = $(window),
+    height    = $window.height(),
+	width     = $window.width();
+
 $(function() {
 	$('.menu_button').on('click', function (e) {
 		e.preventDefault();
@@ -6,42 +10,43 @@ $(function() {
 	});
   });
 
-  //switch to about me
+  //switch to home page
 $(function() {
-	$('.main_page').on('click', function (e) {
-		e.preventDefault();
-		$('.main_content').load('main_page.html', function() {
-			  $('body').scrollTop(0);
-		});
+	$('.home_page_nav').on('click', function (e) {
+		page_switch('home_page');
 	});
   });
   
-  //switch to dog page
+  //switch to details
   $(function() {
-	$('.rsvp_page').on('click', function (e) {
-		e.preventDefault();
-		$('.main_content').load('rsvp_page.html', function() {
-			  $('body').scrollTop(0);
-		});
-	});
-  });
-  
-  //switch back to home
-  $(function() {
-	$('.details_page').on('click', function (e) {
-		e.preventDefault();
-		$('.main_content').load('details_page.html', function() {
-			  $('body').scrollTop(0);
-		});
+	$('.details_page_nav').on('click', function (e) {
+		page_switch('details_page_nav');
 	});
   });
     
-  //switch back to home
+  //switch to registry
   $(function() {
 	$('.registry_page').on('click', function (e) {
-		e.preventDefault();
-		$('.main_content').load('registry_page.html', function() {
-			  $('body').scrollTop(0);
-		});
+		page_switch('registry_page_nav');
 	});
   });
+
+  function page_switch(page_name) {
+	e.preventDefault();
+	$('.page_section').load(page_name + '.html', function() {
+			$('page_section').scrollTop(0);
+	});
+  }
+
+  function sticky(){
+	var scrollTop = $window.scrollTop();
+	if (scrollTop > (height - $('#nav_wrap').height())) {
+	  $('#nav_wrap').addClass('sticky');
+	  $('#nav_wrap').removeClass('not_sticky');
+	} else {
+	  $('#nav_wrap').removeClass('sticky');
+	  $('#nav_wrap').addClass('not_sticky');
+	}
+  } 
+  $window.on('touchmove', sticky);
+  $window.on('scroll', sticky);  

@@ -36,14 +36,14 @@ body {
 	display: inline-block;
 	left: 0;
 	margin: 1.5em;
-	transition: .3s all ease-in-out;
+	transition: .5s all ease-in-out;
 }
 .menu_bars {
 	width: 100%;
 }
 .menu_button.menu_open {
-	left: 95%;
-	transition: 0.3s all ease-in-out;
+	left: 90%;
+	transition: 0.5s all ease-in-out;
 }
 .menu_panel {
 	/*visibility: hidden;*/
@@ -54,16 +54,17 @@ body {
 	display: inline;
 	background: white;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
-	transition: .3s all ease-in-out;
+	transition: .5s all ease-in-out;
 	opacity: 0.95;
 }
 .menu_panel.menu_open {
 	left: 0px;
-	transition: .3s all ease-in-out;
+	transition: .5s all ease-in-out;
 }
 a {
 	text-decoration: none;
 	color: black;
+	cursor: pointer;
 }
 .menu_title {
 	margin-top: 20px;
@@ -80,8 +81,39 @@ a {
 }
 .shmooie_card {
 	box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
-	min-height: 200px;
+	min-height: 2000px;
 	background: white;
 	margin-bottom: 50px;
 	padding: 20px 0;
+}
+
+#nav_wrap {
+	width: 100%;
+	min-height: 5em;
+	overflow: hidden;
+	z-index: 100;
+	text-align: center;
+	background: white;
+}
+
+nav {
+	margin-top: 2em;
+}
+
+nav a {
+	margin: 0em 3em;
+    font-size: x-large;
+}
+  
+.sticky {
+    position:fixed;
+	top:0;
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
+	transition: .3s all ease-in-out;
+	opacity: 1;
+}
+.not_sticky {
+	position:absolute;
+	bottom:0;
+	opacity: 0.5;
 }
