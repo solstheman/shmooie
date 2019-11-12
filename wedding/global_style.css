@@ -1,7 +1,7 @@
 body {
 	margin: 0px;
 	background: #eee;
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Raleway', sans-serif; 
 }
 .header {
 	color: black;
@@ -122,4 +122,16 @@ nav a {
 
 .splash_image {
 	height: 100%;
+}
+
+.info_title {
+	font-size: 55px;
+	font-weight: bold;
+}
+.info_body {
+	font-size: 30px;
+}
+
+.dori_reward {
+	width: 80%
 }
