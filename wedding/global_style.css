@@ -13,8 +13,6 @@ body {
 	position: fixed;
 }
 .main_content {
-	padding-top: 7em;
-	width: 90%;
 	margin: auto;
 	text-align: center;
 	display: block;
@@ -116,4 +114,12 @@ nav a {
 	position:absolute;
 	bottom:0;
 	opacity: 0.5;
+}
+
+.splash_image_container {
+	height: 100vh;
+}
+
+.splash_image {
+	height: 100%;
 }
