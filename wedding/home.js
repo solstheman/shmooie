@@ -1,37 +1,29 @@
 var $window   = $(window),
-    height    = $window.height(),
+	height    = $window.height(),
 	width     = $window.width();
 
-$(function() {
-	$('.menu_button').on('click', function (e) {
-		e.preventDefault();
-		$('.menu_panel').toggleClass('menu_open');
-		$('.menu_button').toggleClass('menu_open');
-	});
-  });
-
   //switch to home page
-$(function() {
+  $(function() {
 	$('.home_page_nav').on('click', function (e) {
-		page_switch('home_page');
+		page_switch(e, 'home_page_nav');
 	});
   });
   
   //switch to details
   $(function() {
 	$('.details_page_nav').on('click', function (e) {
-		page_switch('details_page_nav');
+		page_switch(e, 'details_page_nav');
 	});
   });
-    
+	
   //switch to registry
   $(function() {
-	$('.registry_page').on('click', function (e) {
-		page_switch('registry_page_nav');
+	$('.registry_page_nav').on('click', function (e) {
+		page_switch(e, 'registry_page_nav');
 	});
   });
 
-  function page_switch(page_name) {
+  function page_switch(e, page_name) {
 	e.preventDefault();
 	$('.page_section').load(page_name + '.html', function() {
 			$('page_section').scrollTop(0);
