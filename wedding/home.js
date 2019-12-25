@@ -25,8 +25,8 @@ var $window   = $(window),
 
   function page_switch(e, page_name) {
 	e.preventDefault();
-	$('.page_section').load(page_name + '.html', function() {
-			$('page_section').scrollTop(0);
+	$('.info_body`').load('wedding/' + page_name + '.html', function() {
+		$window.scrollTop(height);
 	});
   }
 
