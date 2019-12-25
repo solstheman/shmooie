@@ -134,5 +134,9 @@ nav a {
 }
 
 .dori_reward {
-	width: 80%
+	width: 80%;
+}
+
+.external_link {
+	color: darkblue;
 }
