@@ -140,3 +140,9 @@ nav a {
 .external_link {
 	color: darkblue;
 }
+
+.details_header {
+	border-top: 1px solid black;
+    margin-top: 2em;
+    padding-top: 1em;
+}
