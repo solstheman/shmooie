@@ -19,6 +19,7 @@ var $window   = $(window),
   //switch to registry
   $(function() {
 	$('.registry_page_nav').on('click', function (e) {
+		$("script[src='https://widget.zola.com/js/widget.js']").remove()
 		page_switch(e, 'registry_page_nav');
 	});
   });
