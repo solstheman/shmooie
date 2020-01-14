@@ -87,7 +87,7 @@ a {
 
 #nav_wrap {
 	width: 100%;
-	min-height: 5em;
+	min-height: 7em;
 	overflow: hidden;
 	z-index: 100;
 	text-align: center;
@@ -99,8 +99,9 @@ nav {
 }
 
 nav a {
-	margin: 0em 3em;
-    font-size: x-large;
+    margin: 0em 3em;
+    font-size: 2em;
+    font-weight: 900;
 }
   
 .sticky {
@@ -118,9 +119,10 @@ nav a {
 }
 
 .splash_image_container {
-	overflow: hidden;
-    position: relative;
-    height: 100%;
+	background-image: url('header_backsplash.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
 }
 
 .splash_image {
