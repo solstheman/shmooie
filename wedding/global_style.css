@@ -98,8 +98,11 @@ nav {
 	margin-top: 2em;
 }
 
+nav a + a {
+    margin-left: 5em;
+}
+
 nav a {
-    margin: 0em 3em;
     font-size: 2em;
     font-weight: 900;
 }
@@ -128,12 +131,8 @@ nav a {
 .splash_image {
 	height: 100vh;
 }
-
-.info_title {
-	font-size: 55px;
-	font-weight: bold;
-}
 .info_body {
+	margin-top: 3em;
 	font-size: 30px;
 }
 
