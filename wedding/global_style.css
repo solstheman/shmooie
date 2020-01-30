@@ -34,6 +34,8 @@ body {
     padding: 5px;
 	white-space: nowrap;
 	cursor: pointer;
+	width: 100%;
+    text-align: center;
 }
 .primary_button:hover {
 	text-decoration: none;
@@ -161,6 +163,19 @@ nav a {
 
 .details_header {
 	border-top: 1px solid black;
-    margin-top: 2em;
-    padding-top: 1em;
+    margin: 2em 0;
+	padding-top: 1em;
+}
+
+.details_header .h2 {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+.info_description {
+	text-align: justify;
+}
+
+.airbnb_option {
+	margin-top: 3em;
 }
