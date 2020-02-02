@@ -1,7 +1,16 @@
+@font-face {
+	font-family: 'Gotham Medium';
+	src: url('fonts/Gotham-Medium.otf');
+}
+@font-face {
+	font-family: 'Gotham Thin';
+	src: url('fonts/Gotham-Thin.otf');
+}
 body {
 	margin: 0px;
 	background: #eee;
-	font-family: 'Raleway', sans-serif; 
+	font-family: 'Gotham Thin', sans-serif; 
+	font-weight: 800;
 }
 .header {
 	color: black;
@@ -35,7 +44,8 @@ body {
 	white-space: nowrap;
 	cursor: pointer;
 	width: 100%;
-    text-align: center;
+	text-align: center;
+	font-family: 'Gotham Medium';
 }
 .primary_button:hover {
 	text-decoration: none;
@@ -121,7 +131,14 @@ nav a + a {
 
 nav a {
     font-size: 2em;
-    font-weight: 900;
+	font-weight: 900;
+	color: #751616;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #751616;
+	font-family: 'Gotham Medium';
 }
   
 .sticky {
@@ -134,7 +151,7 @@ nav a {
 .not_sticky {
 	position:absolute;
 	bottom:0;
-	opacity: 0.5;
+	opacity: 0.85;
 	transition: .3s all ease-in-out;
 }
 
