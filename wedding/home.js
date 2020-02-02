@@ -2,6 +2,12 @@ var $window   = $(window),
 	height    = $window.height(),
 	width     = $window.width();
 
+
+  window.onload = function(e) {
+	  e.preventDefault();
+	  $('.info_body').load('/wedding/home_page_nav.html')
+  }
+
   //switch to home page
   $(function() {
 	$('.home_page_nav').on('click', function (e) {
