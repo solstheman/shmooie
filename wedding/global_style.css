@@ -6,6 +6,9 @@
 	font-family: 'Gotham Thin';
 	src: url('fonts/Gotham-Thin.otf');
 }
+:root {
+	--theme-color: #751616;
+}
 body {
 	margin: 0px;
 	background: #eee;
@@ -25,6 +28,7 @@ body {
 	margin: auto;
 	text-align: center;
 	display: block;
+	padding: 15px;
 }
 .title {
 	margin-top: 1.5em;
@@ -36,8 +40,8 @@ body {
 	margin: 0;
 }
 .primary_button {
-	border: 3px solid #751616;
-	background: #751616;
+	border: 3px solid var(--theme-color);
+	background: var(--theme-color);
 	color: white;
     border-radius: 10px;
     padding: 5px;
@@ -49,7 +53,7 @@ body {
 }
 .primary_button:hover {
 	text-decoration: none;
-	color: #751616;
+	color: var(--theme-color);
 	background: white;
 }
 
@@ -132,12 +136,12 @@ nav a + a {
 nav a {
     font-size: 2em;
 	font-weight: 900;
-	color: #751616;
+	color: var(--theme-color);
 }
 
 nav a:hover {
 	text-decoration: none;
-	color: #751616;
+	color: var(--theme-color);
 	font-family: 'Gotham Medium';
 }
   
@@ -167,7 +171,7 @@ nav a:hover {
 }
 .info_body {
 	margin-top: 3em;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .dori_reward {
@@ -179,9 +183,12 @@ nav a:hover {
 }
 
 .details_header {
-	border-top: 1px solid black;
     margin: 2em 0;
 	padding-top: 1em;
+}
+
+.details_header ~ .details_header {
+	border-top: 5px solid var(--theme-color);
 }
 
 .details_header .h2 {
