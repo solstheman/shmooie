@@ -28,7 +28,6 @@ body {
 	margin: auto;
 	text-align: center;
 	display: block;
-	padding: 15px;
 }
 .title {
 	margin-top: 1.5em;
@@ -172,6 +171,7 @@ nav a:hover {
 .info_body {
 	margin-top: 3em;
 	font-size: 25px;
+	padding: 0 200px;
 }
 
 .dori_reward {
