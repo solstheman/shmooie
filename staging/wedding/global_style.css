@@ -51,9 +51,10 @@ p {
 	padding: 5px;
 	white-space: nowrap;
 	cursor: pointer;
-	width: 60%;
+	width: 100%;
 	text-align: center;
 	font-family: 'Gotham Medium';
+	margin:auto;
 }
 .primary_button:hover {
 	text-decoration: none;
@@ -219,7 +220,7 @@ nav a:hover {
 	width: 100%;
 }
 
-.hotel_block + .hotel_block {
+.hotel_block {
 	margin-top: 40px;
 }
 
@@ -244,4 +245,10 @@ ul ul {
 
 .things_to_do {
 	color: black;
+}
+.footer {
+	background-color: #eeeeee;
+	height: 5em;
+	margin-top: -4em;
+	padding: 2em;
 }
