@@ -5,7 +5,7 @@ var $window   = $(window),
 
   window.onload = function(e) {
 	  e.preventDefault();
-	  $('.info_body').load('home_page_nav.html')
+	  $('.info_body').load('/weding/home_page_nav.html')
   }
 
   //switch to home page
