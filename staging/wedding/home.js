@@ -32,15 +32,13 @@ var $window   = $(window),
 
   function page_switch(e, page_name) {
 	e.preventDefault();
-	$('.info_body').load('/wedding/' + page_name + '.html', function() {
+	$('.info_body').load('./wedding/' + page_name + '.html', function() {
 		$window.scrollTop(height);
 	});
   }
 
   function sticky(){
 	var scrollTop = $window.scrollTop();
-	console.log(scroll)
-	console.log(height - $('#nav_wrap').height())
 	if (scrollTop > (height - $('#nav_wrap').height())) {
 	  $('#nav_wrap').addClass('sticky');
 	  $('#nav_wrap').removeClass('not_sticky');

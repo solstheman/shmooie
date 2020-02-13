@@ -166,9 +166,9 @@ nav a:hover {
 }
 
 .splash_image_container {
-	background-image: url('header_backsplash.jpg');
+	/* background-image: url('header_backsplash.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: center; */
 	height: 100vh;
 }
 
@@ -244,24 +244,4 @@ ul ul {
 
 .things_to_do {
 	color: black;
-}
-
-/* Paralax Stuff */
-.parallax {
-	perspective: 1px;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-.parallax__layer {
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-.parallax__layer--base {
-	transform: translateZ(0);
-}
-.parallax__layer--back {
-	transform: translateZ(-10px) scale(12);
 }
