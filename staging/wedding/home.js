@@ -39,6 +39,8 @@ var $window   = $(window),
 
   function sticky(){
 	var scrollTop = $window.scrollTop();
+	console.log(scroll)
+	console.log(height - $('#nav_wrap').height())
 	if (scrollTop > (height - $('#nav_wrap').height())) {
 	  $('#nav_wrap').addClass('sticky');
 	  $('#nav_wrap').removeClass('not_sticky');

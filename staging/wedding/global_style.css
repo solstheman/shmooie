@@ -15,6 +15,11 @@ body {
 	font-family: 'Gotham Thin', sans-serif; 
 	font-weight: 800;
 }
+p {
+	font-size: 20px;
+	margin: 0;
+	text-align: center;
+}
 .header {
 	color: black;
 	width: 100%;
@@ -42,8 +47,8 @@ body {
 	border: 3px solid var(--theme-color);
 	background: var(--theme-color);
 	color: white;
-    border-radius: 10px;
-    padding: 5px;
+	border-radius: 10px;
+	padding: 5px;
 	white-space: nowrap;
 	cursor: pointer;
 	width: 60%;
@@ -129,11 +134,11 @@ nav {
 }
 
 nav a + a {
-    margin-left: 5em;
+	margin-left: 5em;
 }
 
 nav a {
-    font-size: 2em;
+	font-size: 2em;
 	font-weight: 900;
 	color: var(--theme-color);
 	outline: none;
@@ -146,11 +151,12 @@ nav a:hover {
 }
   
 .sticky {
-    position:fixed;
+	position:fixed;
 	top:0;
 	box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
 	transition: .3s all ease-in-out;
 	opacity: 1;
+	z-index: 999;
 }
 .not_sticky {
 	position:absolute;
@@ -184,7 +190,7 @@ nav a:hover {
 }
 
 .details_header {
-    margin: 2em 0;
+	margin: 2em 0;
 	padding-top: 1em;
 }
 
@@ -195,6 +201,10 @@ nav a:hover {
 .details_header .h2 {
 	font-weight: bolder;
 	font-size: 1.5em;
+}
+
+.details_section {
+	padding: 0 7em;
 }
 
 .info_description {
@@ -234,4 +244,24 @@ ul ul {
 
 .things_to_do {
 	color: black;
+}
+
+/* Paralax Stuff */
+.parallax {
+	perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.parallax__layer {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.parallax__layer--base {
+	transform: translateZ(0);
+}
+.parallax__layer--back {
+	transform: translateZ(-10px) scale(12);
 }
