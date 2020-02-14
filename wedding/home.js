@@ -5,7 +5,7 @@ var $window   = $(window),
 
   window.onload = function(e) {
 	  e.preventDefault();
-	  $('.info_body').load('/wedding/home_page_nav.html')
+	  $('.info_body').load('./wedding/home_page_nav.html')
   }
 
   //switch to home page
@@ -32,7 +32,7 @@ var $window   = $(window),
 
   function page_switch(e, page_name) {
 	e.preventDefault();
-	$('.info_body').load('/wedding/' + page_name + '.html', function() {
+	$('.info_body').load('./wedding/' + page_name + '.html', function() {
 		$window.scrollTop(height);
 	});
   }
