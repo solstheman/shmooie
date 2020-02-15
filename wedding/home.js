@@ -10,21 +10,22 @@ var $window   = $(window),
 
   //switch to home page
   $(function() {
-	$('.info_body').on('click', '.home_page_nav', function (e) {
+	$('body').on('click', '.home_page_nav', function (e) {
 		page_switch(e, 'home_page_nav');
 	});
   });
   
   //switch to details
   $(function() {
-	$('.info_body').on('click', '.details_page_nav', function (e) {
-		page_switch(e, 'details_page_nav');
+	$('body').on('click', '.details_page_nav', function (e) {
+		scrollheight = $("#hotels").offset().top - 120
+		page_switch(e, 'details_page_nav', scrollHeight);
 	});
   });
 	
   //switch to registry
   $(function() {
-	$('.info_body').on('click', '.registry_page_nav', function (e) {
+	$('body').on('click', '.registry_page_nav', function (e) {
 		$("script[src='https://widget.zola.com/js/widget.js']").remove()
 		page_switch(e, 'registry_page_nav');
 	});
@@ -32,19 +33,15 @@ var $window   = $(window),
 
   //switch to details and scroll to hotels
   $(function() {
-	$('.info_body').on('click', '.hotels_nav', function (e) {
+	$('body').on('click', '.hotels_nav', function (e) {
 		page_switch(e, 'details_page_nav', '#hotels');
 	});
   });
 
-  function page_switch(e, page_name, scrollID = false) {
+  function page_switch(e, page_name, scrollHeight = height) {
 	e.preventDefault();
 	$('.info_body').load('./wedding/' + page_name + '.html', function() {
-		if(scrollID) {
-			$.scrollTo($(scrollID), 1000);
-		} else {
-			$window.scrollTop(height);
-		}
+		$window.scrollTop(height);
 	});
   }
 
