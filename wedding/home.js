@@ -17,7 +17,7 @@ var $window   = $(window),
   
   //switch to details
   $(function() {
-	$('.details_page_nav').on('click', function (e) {
+	$('.info_body').on('click', '.details_page_nav', function (e) {
 		page_switch(e, 'details_page_nav');
 	});
   });
