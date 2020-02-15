@@ -18,8 +18,7 @@ var $window   = $(window),
   //switch to details
   $(function() {
 	$('body').on('click', '.details_page_nav', function (e) {
-		scrollheight = $("#hotels").offset().top - 120
-		page_switch(e, 'details_page_nav', '#hotels');
+		page_switch(e, 'details_page_nav');
 	});
   });
 	
