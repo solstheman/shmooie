@@ -141,11 +141,14 @@ nav a + a {
 nav a {
 	font-size: 2em;
 	font-weight: 900;
+}
+
+.nav_link {
 	color: var(--theme-color);
 	outline: none;
 }
 
-nav a:hover {
+.nav_link:hover {
 	text-decoration: none;
 	color: var(--theme-color);
 	font-family: 'Gotham Medium';
