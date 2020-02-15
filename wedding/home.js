@@ -10,7 +10,7 @@ var $window   = $(window),
 
   //switch to home page
   $(function() {
-	$('.home_page_nav').on('click', function (e) {
+	$('.info_body').on('click', '.home_page_nav', function (e) {
 		page_switch(e, 'home_page_nav');
 	});
   });
@@ -24,16 +24,27 @@ var $window   = $(window),
 	
   //switch to registry
   $(function() {
-	$('.registry_page_nav').on('click', function (e) {
+	$('.info_body').on('click', '.registry_page_nav', function (e) {
 		$("script[src='https://widget.zola.com/js/widget.js']").remove()
 		page_switch(e, 'registry_page_nav');
 	});
   });
 
-  function page_switch(e, page_name) {
+  //switch to details and scroll to hotels
+  $(function() {
+	$('.info_body').on('click', '.hotels_nav', function (e) {
+		page_switch(e, 'details_page_nav', '#hotels');
+	});
+  });
+
+  function page_switch(e, page_name, scrollID = false) {
 	e.preventDefault();
 	$('.info_body').load('./wedding/' + page_name + '.html', function() {
-		$window.scrollTop(height);
+		if(scrollID) {
+			$.scrollTo($(scrollID), 1000);
+		} else {
+			$window.scrollTop(height);
+		}
 	});
   }
 
