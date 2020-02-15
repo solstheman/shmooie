@@ -19,7 +19,7 @@ var $window   = $(window),
   $(function() {
 	$('body').on('click', '.details_page_nav', function (e) {
 		scrollheight = $("#hotels").offset().top - 120
-		page_switch(e, 'details_page_nav', scrollHeight);
+		page_switch(e, 'details_page_nav', '#hotels');
 	});
   });
 	
@@ -38,10 +38,15 @@ var $window   = $(window),
 	});
   });
 
-  function page_switch(e, page_name, scrollHeight = height) {
+  function page_switch(e, page_name, scrollID = false) {
 	e.preventDefault();
 	$('.info_body').load('./wedding/' + page_name + '.html', function() {
-		$window.scrollTop(height);
+		if(scrollID) {
+			scrollHeight = $(scrollID).offset().top - 120
+		} else {
+			scrollHeight = height
+		}
+		$window.scrollTop(scrollHeight);
 	});
   }
 
