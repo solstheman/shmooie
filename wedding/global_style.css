@@ -255,3 +255,7 @@ ul ul {
 	margin-top: -4em;
 	padding: 2em;
 }
+.poi_image {
+	border-radius: 50%;
+	height: 300px
+}
