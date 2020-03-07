@@ -238,10 +238,6 @@ nav a {
 }
 
 ul {
-	list-style-type: none;
-}
-
-ul ul {
 	list-style-type: disc;
 	color: var(--theme-color);
 }
