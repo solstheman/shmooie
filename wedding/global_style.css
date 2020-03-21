@@ -211,6 +211,10 @@ nav a {
 	padding: 0 2em;
 }
 
+.registry_header {
+	margin-top: 5em
+}
+
 .info_description {
 	text-align: justify;
 }
