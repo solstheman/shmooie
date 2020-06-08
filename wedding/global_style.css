@@ -259,3 +259,10 @@ ul {
 	border-radius: 50%;
 	height: 300px
 }
+.information-banner {
+    height: 4em;
+    padding: 1em;
+    font-size: x-large;
+    background: var(--theme-color);
+    color: white;
+}
