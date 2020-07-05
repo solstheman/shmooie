@@ -4,8 +4,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="wedding/global_style.css">
-		<!-- Load the Twitch embed script -->
-		<script src="https://player.twitch.tv/js/embed/v1.js"></script>
 	</head>
 	<body>
 		<div id="nav_wrap" class="not_sticky">
@@ -25,14 +23,7 @@
 					<div class="shmooie_card home_page">
 						<div class="info_body">
 							<!-- Add a placeholder for the Twitch embed -->
-							<div id="twitch-embed"></div>
-
-							<!-- Create a Twitch.Player object. This will render within the placeholder div -->
-							<script type="text/javascript">
-								new Twitch.Player("twitch-embed", {
-									channel: "stoutcorn"
-								});
-							</script>
+							<iframe src="https://player.twitch.tv/?channel=stoutcorn&parent=shmooie.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
 							<!-- end of info body -->
 						</div>
 					</div>
