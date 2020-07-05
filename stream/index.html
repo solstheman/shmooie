@@ -30,10 +30,12 @@
 
 							<!-- Create a Twitch.Player object. This will render within the placeholder div -->
 							<script type="text/javascript">
-							new Twitch.Player("twitch-embed", {
+							const player = new Twitch.Player("twitch-embed", {
 								channel: "stoutcorn",
-								parent: ['shmooie.com']
+								parent: ["shmooie.com"]
 							});
+							player.setFullscreen(true);
+							player.setVolume(0.8);
 							</script>
 							<!-- end of info body -->
 						</div>
