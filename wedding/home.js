@@ -39,12 +39,5 @@ var $window   = $(window),
 
   function page_switch(e, page_name, scrollID = false) {
 	e.preventDefault();
-	$('.info_body').load('./wedding/' + page_name + '.html', function() {
-		if(scrollID) {
-			scrollHeight = $(scrollID).offset().top - 120
-		} else {
-			scrollHeight = height
-		}
-		$window.scrollTop(scrollHeight);
-	});
+	$('.info_body').load('./wedding/' + page_name + '.html');
   } 
