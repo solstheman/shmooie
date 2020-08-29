@@ -5,7 +5,8 @@ var $window   = $(window),
 
   window.onload = function(e) {
 	  e.preventDefault();
-	  $('.info_body').load('./wedding/home_page_nav.html')
+	  $('.info_body').load('./wedding/home_page_nav.html');
+	  $('#stream_frame').height(window.height * 0.75);
   }
 
   //switch to home page
