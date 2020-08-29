@@ -6,7 +6,7 @@ var $window   = $(window),
   window.onload = function(e) {
 	  e.preventDefault();
 	  $('.info_body').load('./wedding/home_page_nav.html', function() {
-		$('#stream_frame').height(window.height * 0.75);
+		$('#stream_frame').height(window.height * 0.70);
 	  });
 	  
   }
@@ -15,7 +15,7 @@ var $window   = $(window),
   $(function() {
 	$('body').on('click', '.home_page_nav', function (e) {
 		page_switch(e, 'home_page_nav', function() {
-			$('#stream_frame').height(window.height * 0.75);
+			$('#stream_frame').height(window.height * 0.70);
 		});
 	});
   });
