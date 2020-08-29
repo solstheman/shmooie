@@ -14,7 +14,9 @@ var $window   = $(window),
   //switch to home page
   $(function() {
 	$('body').on('click', '.home_page_nav', function (e) {
-		page_switch(e, 'home_page_nav');
+		page_switch(e, 'home_page_nav', function() {
+			$('#stream_frame').height(window.height * 0.75);
+		});
 	});
   });
   
@@ -36,11 +38,11 @@ var $window   = $(window),
   //switch to details and scroll to hotels
   $(function() {
 	$('body').on('click', '.hotels_nav', function (e) {
-		page_switch(e, 'details_page_nav', '#hotels');
+		page_switch(e, 'details_page_nav');
 	});
   });
 
-  function page_switch(e, page_name, scrollID = false) {
+  function page_switch(e, page_name, callback = function(){}) {
 	e.preventDefault();
-	$('.info_body').load('./wedding/' + page_name + '.html');
+	$('.info_body').load('./wedding/' + page_name + '.html', callback);
   } 
