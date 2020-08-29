@@ -5,9 +5,9 @@ var $window   = $(window),
 
   window.onload = function(e) {
 	  e.preventDefault();
-	  $('.info_body').load('./wedding/home_page_nav.html').then(
-		$('#stream_frame').height(window.height * 0.75)
-	  );
+	  $('.info_body').load('./wedding/home_page_nav.html', function() {
+		$('#stream_frame').height(window.height * 0.75);
+	  });
 	  
   }
 
