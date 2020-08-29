@@ -115,7 +115,7 @@ a {
 }
 .shmooie_card {
 	box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
-	min-height: 2000px;
+	min-height: 1000px;
 	background: white;
 	margin-bottom: 50px;
 	padding: 20px 0;
